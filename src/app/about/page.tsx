@@ -1,6 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
+<<<<<<< HEAD
 import { FaReact, FaPython, FaGithub, FaRobot, FaNodeJs } from "react-icons/fa";
+=======
+import { FaReact, FaPython,FaRobot } from "react-icons/fa";
+>>>>>>> 11c6738cf61fe75335d33ea1996bf60784e6a630
 import { SiNextdotjs, SiTailwindcss, SiStreamlit } from "react-icons/si";
 
 export default function AboutPage() {
@@ -25,7 +29,11 @@ export default function AboutPage() {
           transition={{ delay: 0.3 }}
         >
           <p>
+<<<<<<< HEAD
             I'm <span className="text-white font-semibold">Muhammad Daniyal</span>, a passionate developer exploring the world of{" "}
+=======
+            I&apos;m <span className="text-white font-semibold">Muhammad Daniyal</span>, a passionate developer exploring the world of{" "}
+>>>>>>> 11c6738cf61fe75335d33ea1996bf60784e6a630
             <span className="text-white font-semibold">Agentic AI</span>, web technologies, and automation.
           </p>
           <p>
@@ -34,7 +42,11 @@ export default function AboutPage() {
             <span className="text-white font-semibold">OpenAI SDK</span>.
           </p>
           <p>
+<<<<<<< HEAD
             Currently, I'm diving deep into agent-based systems, AI assistants, and building tools that combine front-end excellence with smart AI logic.
+=======
+            Currently, I&apos;m diving deep into agent-based systems, AI assistants, and building tools that combine front-end excellence with smart AI logic.
+>>>>>>> 11c6738cf61fe75335d33ea1996bf60784e6a630
           </p>
         </motion.div>
 
@@ -68,7 +80,11 @@ export default function AboutPage() {
           <h3 className="text-2xl font-semibold text-white">My Mission</h3>
           <p>
             My goal is to build intelligent tools and digital experiences that are user-friendly, fast, and AI-powered.
+<<<<<<< HEAD
             I'm working toward becoming a full-stack AI engineer who can combine design, logic, and automation for modern web applications.
+=======
+            I&apos;m working toward becoming a full-stack AI engineer who can combine design, logic, and automation for modern web applications.
+>>>>>>> 11c6738cf61fe75335d33ea1996bf60784e6a630
           </p>
         </motion.div>
       </div>
