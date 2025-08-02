@@ -23,7 +23,7 @@ export default function Navbar() {
               className="object-cover"
             />
           </div>
-          <span className="text-lg font-semibold text-gray-800">Developer</span>
+          <span className="text-lg font-semibold text-gray-800">daniyalxdev</span>
         </Link>
 
         {/* Desktop Links */}
