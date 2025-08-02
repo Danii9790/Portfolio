@@ -23,11 +23,7 @@ export default function Navbar() {
               className="object-cover"
             />
           </div>
-<<<<<<< HEAD
-          <span className="text-lg font-semibold text-gray-800">daniyalxdev</span>
-=======
-          <span className="text-lg font-semibold text-gray-800">Developer</span>
->>>>>>> 11c6738cf61fe75335d33ea1996bf60784e6a630
+          <span className="text-lg font-semibold text-gray-800">daniyalx</span>
         </Link>
 
         {/* Desktop Links */}
