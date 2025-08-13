@@ -47,7 +47,7 @@ export default function Hero() {
           transition={{ delay: 0.4, duration: 0.4 }}
         >
           <a
-            href="https://www.linkedin.com/in/daniyal"
+            href="www.linkedin.com/in/muhammad-daniyal-a626812ba"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400 transition duration-200"
