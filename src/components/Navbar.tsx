@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Menu } from "lucide-react";
+import { useState } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -10,6 +11,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="bg-white text-black shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -46,6 +53,14 @@ export default function Navbar() {
           </li>
           <li>
             <Link
+              href="/skills"
+              className="hover:text-blue-500 transition-colors duration-200"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/projects"
               className="hover:text-blue-500 transition-colors duration-200"
             >
@@ -56,25 +71,30 @@ export default function Navbar() {
 
         {/* Mobile Menu Icon */}
         <div className="md:hidden">
-          <DropdownMenu>
+          <DropdownMenu open={menuOpen} onOpenChange={setMenuOpen}>
             <DropdownMenuTrigger asChild>
-              <button>
+              <button onClick={() => setMenuOpen((prev) => !prev)}>
                 <Menu className="w-6 h-6 text-gray-700" />
               </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="bg-white">
               <DropdownMenuItem>
-                <Link href="/" className="w-full">
+                <Link href="/" className="w-full" onClick={handleLinkClick}>
                   Home
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/about" className="w-full">
+                <Link href="/about" className="w-full" onClick={handleLinkClick}>
                   About
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/projects" className="w-full">
+                <Link href="/skills" className="w-full" onClick={handleLinkClick}>
+                  Skills
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/projects" className="w-full" onClick={handleLinkClick}>
                   Projects
                 </Link>
               </DropdownMenuItem>
