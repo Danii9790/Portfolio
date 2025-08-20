@@ -20,7 +20,7 @@ export default function AssistantWidget() {
       {open && (
         <div className="mt-4 w-[360px] h-[500px] rounded-lg overflow-hidden shadow-2xl border border-gray-300">
           <iframe
-            src="https://giaic-q4-production.up.railway.app/"
+            src="https://daniyalxdev-personal-assistant.hf.space"
             width="100%"
             height="100%"
             className="border-none"
