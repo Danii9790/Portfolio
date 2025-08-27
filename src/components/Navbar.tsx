@@ -24,7 +24,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center space-x-3">
           <div className="relative w-9 h-9 rounded-full overflow-hidden border border-gray-300">
             <Image
-              src="/images/dani.png"
+              src="/images/logo.png"
               alt="Logo"
               fill
               className="object-cover"

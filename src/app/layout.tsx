@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Portfolio",
   description: "My awesome portfolio site",
   icons : {
-    icon:"/images/favicon_icon.png",
+    icon:"/images/logo.png",
   }
 };
 
