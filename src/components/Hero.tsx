@@ -37,7 +37,7 @@ export default function Hero() {
         >
           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 blur-xl opacity-40 group-hover:opacity-70 transition duration-300"></div>
           <Image
-            src="/images/dani.png"
+            src="/images/profile.png"
             alt="Profile_picture"
             fill
             className="object-cover rounded-full border-4 border-white shadow-xl group-hover:scale-105 transition-transform duration-300"
