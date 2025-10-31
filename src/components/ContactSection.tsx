@@ -7,7 +7,7 @@ const contactInfo = [
     icon: FaEnvelope,
     label: "Email",
     value: "daniyalashraf9790@gmail.com",
-    href: "mailto:daniyalashraf9790@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&to=daniyalashraf9790@gmail.com",
     color: "text-red-400",
   },
   {
@@ -61,14 +61,19 @@ export default function ContactSection() {
               <motion.a
                 key={contact.label}
                 href={contact.href}
-                target={contact.href.startsWith("http") ? "_blank" : undefined}
+                target={contact.href.startsWith("http") || contact.href.startsWith("mailto") ? "_blank" : undefined}
                 rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                onClick={(e) => {
+                  if (contact.href.startsWith("mailto")) {
+                    window.location.href = contact.href;
+                  }
+                }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2, duration: 0.5 }}
                 whileHover={{ y: -10, scale: 1.02 }}
-                className="group glass rounded-2xl p-8 border border-white/10 card-hover text-center"
+                className="group glass rounded-2xl p-8 border border-white/10 card-hover text-center cursor-pointer"
               >
                 <div className={`w-16 h-16 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <Icon className={`w-8 h-8 ${contact.color}`} />
